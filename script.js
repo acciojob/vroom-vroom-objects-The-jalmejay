@@ -3,16 +3,18 @@ function Car(make, model) {
 	this.make=make;
 	this.model=model;
 }
-Car.prototype.getMakeModel(){
-	return `${make} ${model}`
+
+
+Car.prototype.getMakeModel = () => {
+	return `${this.make} ${this.model}`
 }
 
 function SportsCar(make, model, topSpeed) {
 	Car.call(this,make,model);
 	this.topSpeed=topSpeed;
 }
-SportsCar.prototype.getTopSpeed(){
-	return `${topspeed}`
+SportsCar.prototype.getTopSpeed= ()=> {
+	return `${this.topSpeed}`
 }
 
 // Create a new SportsCar instance
